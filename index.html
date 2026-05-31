@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-BcjIoLm9.js"></script>
+    <script type="module" crossorigin src="./assets/index-1LMapq4U.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-7Jr9Ay8S.css">
   </head>
   <body class="page">
@@ -55,6 +55,9 @@
                 minlength="2"
                 maxlength="40"
                 pattern="^[a-zA-Zа-яА-ЯёЁ\s\-]+$"
+                title="Разрешены только латинские и кириллические буквы, дефис и пробелы"
+                oninvalid="this.setCustomValidity('Разрешены только латинские и кириллические буквы, дефис и пробелы')"
+                oninput="this.setCustomValidity('')"
               />
               <span id="user-name-error" class="popup__error"></span>
             </label>
@@ -95,6 +98,9 @@
                 minlength="2"
                 maxlength="30"
                 pattern="^[a-zA-Zа-яА-ЯёЁ\s\-]+$"
+                title="Разрешены только латинские и кириллические буквы, дефис и пробелы"
+                oninvalid="this.setCustomValidity('Разрешены только латинские и кириллические буквы, дефис и пробелы')"
+                oninput="this.setCustomValidity('')"
               />
               <span id="place-name-error" class="popup__error"></span>
             </label>
@@ -106,6 +112,8 @@
                 class="popup__input popup__input_type_url"
                 placeholder="Ссылка на картинку"
                 required
+                oninvalid="this.setCustomValidity('Введите корректный URL-адрес')"
+                oninput="this.setCustomValidity('')"
               />
               <span id="place-link-error" class="popup__error"></span>
             </label>
@@ -139,6 +147,8 @@
                 class="popup__input popup__input_type_avatar"
                 placeholder="Ссылка на изображение"
                 required
+                oninvalid="this.setCustomValidity('Введите корректный URL-адрес')"
+                oninput="this.setCustomValidity('')"
               />
               <span id="user-avatar-error" class="popup__error"></span>
             </label>
@@ -153,7 +163,7 @@
       <div class="popup popup_type_info">
         <div class="popup__content popup__content_content_info">
           <button type="button" class="popup__close"></button>
-          <h3 class="popup__title"></h3>
+          <h3 class="popup__title">Информация о карточке</h3>
           <dl class="popup__info"></dl>
           <h4 class="popup__text"></h4>
           <ul class="popup__list"></ul>
