@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-1LMapq4U.js"></script>
+    <script type="module" crossorigin src="./assets/index-RIyWWQco.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-7Jr9Ay8S.css">
   </head>
   <body class="page">
@@ -56,8 +56,6 @@
                 maxlength="40"
                 pattern="^[a-zA-Zа-яА-ЯёЁ\s\-]+$"
                 title="Разрешены только латинские и кириллические буквы, дефис и пробелы"
-                oninvalid="this.setCustomValidity('Разрешены только латинские и кириллические буквы, дефис и пробелы')"
-                oninput="this.setCustomValidity('')"
               />
               <span id="user-name-error" class="popup__error"></span>
             </label>
@@ -99,8 +97,6 @@
                 maxlength="30"
                 pattern="^[a-zA-Zа-яА-ЯёЁ\s\-]+$"
                 title="Разрешены только латинские и кириллические буквы, дефис и пробелы"
-                oninvalid="this.setCustomValidity('Разрешены только латинские и кириллические буквы, дефис и пробелы')"
-                oninput="this.setCustomValidity('')"
               />
               <span id="place-name-error" class="popup__error"></span>
             </label>
@@ -112,8 +108,6 @@
                 class="popup__input popup__input_type_url"
                 placeholder="Ссылка на картинку"
                 required
-                oninvalid="this.setCustomValidity('Введите корректный URL-адрес')"
-                oninput="this.setCustomValidity('')"
               />
               <span id="place-link-error" class="popup__error"></span>
             </label>
@@ -147,8 +141,6 @@
                 class="popup__input popup__input_type_avatar"
                 placeholder="Ссылка на изображение"
                 required
-                oninvalid="this.setCustomValidity('Введите корректный URL-адрес')"
-                oninput="this.setCustomValidity('')"
               />
               <span id="user-avatar-error" class="popup__error"></span>
             </label>
