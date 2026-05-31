@@ -8,8 +8,8 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-DRY4aTsT.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DF43VcIf.css">
+    <script type="module" crossorigin src="./assets/index-BcjIoLm9.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-7Jr9Ay8S.css">
   </head>
   <body class="page">
     <div class="page__content">
@@ -56,7 +56,7 @@
                 maxlength="40"
                 pattern="^[a-zA-Zа-яА-ЯёЁ\s\-]+$"
               />
-              <span class="popup__error name-error"></span>
+              <span id="user-name-error" class="popup__error"></span>
             </label>
             <label class="popup__label">
               <input
@@ -69,7 +69,7 @@
                 minlength="2"
                 maxlength="200"
               />
-              <span class="popup__error description-error"></span>
+              <span id="user-description-error" class="popup__error"></span>
             </label>
             <button type="submit" class="button popup__button popup__button_disabled" disabled>
               Сохранить
@@ -96,7 +96,7 @@
                 maxlength="30"
                 pattern="^[a-zA-Zа-яА-ЯёЁ\s\-]+$"
               />
-              <span class="popup__error place-name-error"></span>
+              <span id="place-name-error" class="popup__error"></span>
             </label>
             <label class="popup__label">
               <input
@@ -107,7 +107,7 @@
                 placeholder="Ссылка на картинку"
                 required
               />
-              <span class="popup__error place-link-error"></span>
+              <span id="place-link-error" class="popup__error"></span>
             </label>
             <button type="submit" class="button popup__button popup__button_disabled" disabled>
               Создать
@@ -140,7 +140,7 @@
                 placeholder="Ссылка на изображение"
                 required
               />
-              <span class="popup__error avatar-error"></span>
+              <span id="user-avatar-error" class="popup__error"></span>
             </label>
             <button type="submit" class="button popup__button popup__button_disabled" disabled>
               Сохранить
